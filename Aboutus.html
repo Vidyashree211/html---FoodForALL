@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>About Us</title>
+    <style>
+    
+        /* Add your CSS styles here */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+        }
+    </style>
+
+<style>
+  *{
+    margin: 0;
+    padding: 0;
+}
+
+.main{
+    width: 100%;
+    background-color: white
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+
+.navbar{
+    width: 1200px;
+    height: 75px;
+    margin: auto;
+}
+
+.icon{
+    width: 200px;
+    float: left;
+    height: 70px;
+}
+
+.logo{
+    color: #de3355;
+    font-size: 35px;
+    font-family: Arial;
+    padding-left: 20px;
+    float: left;
+    padding-top: 10px;
+    margin-top: 5px
+}
+
+.menu{
+    width: 400px;
+    float: left;
+    height: 70px;
+}
+
+ul{
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul li{
+    list-style: none;
+    margin-left: 62px;
+    margin-top: 27px;
+    font-size: 14px;
+}
+
+ul li a{
+    text-decoration: none;
+    color:#de3355;
+    font-family: Arial;
+    font-weight: bold;
+    transition: 0.4s ease-in-out;
+}
+
+ul li a:hover{
+    color: #de3355;
+}
+
+.search{
+    width: 330px;
+    float: left;
+    margin-left: 270px;
+}
+
+.srch{
+    font-family: 'Times New Roman';
+    width: 200px;
+    height: 40px;
+    background: transparent;
+    border: 1px solid #de3355;
+    margin-top: 13px;
+    color: #fff;
+    border-right: none;
+    font-size: 16px;
+    float: left;
+    padding: 10px;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+.btn{
+    width: 100px;
+    height: 40px;
+    background: #de3355;
+    border: 2px solid #de3355;
+    margin-top: 13px;
+    color: #fff;
+    font-size: 15px;
+    border-bottom-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    transition: 0.2s ease;
+    cursor: pointer;
+}
+.btn:hover{
+    color: #000;
+}
+
+.btn:focus{
+    outline: none;
+}
+
+.srch:focus{
+    outline: none;
+}
+
+.content{
+    width: 1200px;
+    height: auto;
+    margin: auto;
+    color: #fff;
+    position: relative;
+}
+
+.content .par{
+    padding-left: 20px;
+    padding-bottom: 25px;
+    font-family: Arial;
+    letter-spacing: 1.2px;
+    line-height: 30px;
+}
+
+.content h1{
+    font-family: 'Times New Roman';
+    font-size: 50px;
+    padding-left: 20px;
+    margin-top: 9%;
+    letter-spacing: 2px;
+}
+
+.content .cn{
+    width: 160px;
+    height: 40px;
+    background: #de3355;
+    border: none;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .4s ease;
+    
+}
+
+.content .cn a{
+    text-decoration: none;
+    color: #000;
+    transition: .3s ease;
+}
+
+.cn:hover{
+    background-color: #fff;
+}
+
+.content span{
+    color: #de3355;
+    font-size: 65px
+}
+
+.form{
+    width: 250px;
+    height: 380px;
+    background: linear-gradient(to top, rgba(0,0,0,0.8)50%,rgba(0,0,0,0.8)50%);
+    position: absolute;
+    top: -20px;
+    left: 870px;
+    transform: translate(0%,-5%);
+    border-radius: 10px;
+    padding: 25px;
+}
+
+.form h2{
+    width: 220px;
+    font-family: sans-serif;
+    text-align: center;
+    color: #de3355;
+    font-size: 22px;
+    background-color: #fff;
+    border-radius: 10px;
+    margin: 2px;
+    padding: 8px;
+}
+
+.form input{
+    width: 240px;
+    height: 35px;
+    background: transparent;
+    border-bottom: 1px solid #de3355;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    color: #fff;
+    font-size: 15px;
+    letter-spacing: 1px;
+    margin-top: 30px;
+    font-family: sans-serif;
+}
+
+.form input:focus{
+    outline: none;
+}
+
+::placeholder{
+    color: #fff;
+    font-family: Arial;
+}
+
+.btnn{
+    width: 240px;
+    height: 40px;
+    background: #de3355;
+    border: none;
+    margin-top: 30px;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    color: #fff;
+    transition: 0.4s ease;
+}
+.btnn:hover{
+    background: #fff;
+    color: #de3355;
+}
+.btnn a{
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
+.form .link{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    padding-top: 20px;
+    text-align: center;
+}
+.form .link a{
+    text-decoration: none;
+    color: #de3355;
+}
+.liw{
+    padding-top: 15px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+.icons a{
+    text-decoration: none;
+    color: #fff;
+}
+.icons ion-icon{
+    color: #fff;
+    font-size: 30px;
+    padding-left: 14px;
+    padding-top: 5px;
+    transition: 0.3s ease;
+}
+.icons ion-icon:hover{
+    color: #de3355;
+}
+  </style>
+</head>
+<body>
+
+    <div class="main">
+        <div class="navbar">
+            <div class="icon">
+                <h2 class="logo">FoodForAll</h2>
+            </div>
+
+            <div class="menu">
+                <ul>
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="file:///C:/Users/sathv/OneDrive/Desktop/Such's%20Website/Aboutus.html">ABOUT</a></li>
+                    <li><a href="\Users\suchi\OneDrive\Documents\Nearme.html">NEAR ME</a></li>
+                    <li><a href="file:///C:/Users/sathv/OneDrive/Desktop/Such's%20Website/Contactus.html">CONTACT</a></li>
+                </ul>
+            </div>
+
+            <div class="search">
+                <input class="srch" type="search" name="" placeholder="Type To text">
+                <a href="#"> <button class="btn">Search</button></a>
+            </div>
+
+        </div> 
+</head>
+<body>
+    <header>
+        <h1>About Us</h1>
+    </header>
+
+    <div class="container">
+        <h2>Our Vision</h2>
+        <p>
+
+At the core of our mission is a vision of a world where no one goes to bed hungry. We firmly believe that food, a basic human need, should be accessible to all. This vision drives us each day to create a platform that not only reduces food wastage but also ensures that wholesome meals reach those who need them the most.<br><br></p>
+
+        <h2>Our Story</h2>
+        <p>Our journey began with a simple idea: restaurants often have surplus food at the end of the day, and there are countless individuals and organizations doing incredible work to alleviate hunger in our communities. So why not connect the dots? That's how our platform came to life.<br>
+
+We started small, working with local restaurants and a handful of dedicated NGOs. Over time, our initiative gained momentum, and today, we collaborate with a growing network of partners, all committed to the cause of ending hunger. Our story is one of progress, cooperation, and the relentless pursuit of a more equitable world.<br><br></p>
+
+        <h2>How It Works?</h2>
+        <p>Our platform streamlines the process of food donation. Restaurants, big or small, can easily notify us when they have surplus food. We then connect them with nearby NGOs, food banks, and orphanages that can pick up and distribute the food promptly. It's a simple, efficient, and rewarding process that allows everyone involved to play a part in solving the hunger crisis.<br><br></p>
+        
+        <h2>Why We Do it?</h2>
+        <p>We do it because we believe that the heart of a community lies in its ability to care for its own. Restaurants, in their own way, are an integral part of a community. They nourish, they sustain, and they can play a pivotal role in reducing food wastage and hunger.<br>
+
+We do it because we know the incredible work that NGOs, food banks, and orphanages do every day, tirelessly serving those in need. We're humbled to play a part in supporting their noble efforts.<br>
+
+But most importantly, we do it for those who need it the most—the individuals and families who are uncertain of where their next meal will come from. We do it because we believe in their potential, and we know that with a warm meal, they can find the strength to overcome their challenges.<br><br></p>
+<h2>Join Us</h2>
+<p>We invite you to join us in this important mission. Whether you're a restaurant with surplus food, an NGO looking to expand your impact, or an individual inspired to make a change, we welcome you with open arms.<br>
+
+Together, we can turn excess food into smiles, hope, and sustenance. Let's build a world where no one has to sleep hungry. Join us in the journey of connecting hearts through food.<br><br></p>
+    </div>
+</body>
+</html>
